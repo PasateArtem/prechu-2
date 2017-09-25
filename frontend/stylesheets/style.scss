@@ -1,0 +1,14 @@
+@import "base/index";
+@import "layout/index";
+@import "vendors/index";
+
+
+
+.container{
+  width: 100%;
+  max-width: 975px ;
+  margin: 0 auto;
+  padding:0 5px; 
+  box-sizing: border-box;
+  background: none;
+}

@@ -1,0 +1,73 @@
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;    
+}
+.auth_buttons{
+    display: none;
+}
+.logo{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding-top: 17px;    
+}
+.nav-item{
+        padding-left: 30px;
+        a{
+            font-size: 20px;
+            color: #000;
+            font-family: 'Conv_SegoeWP';
+            padding-bottom: 9px;
+        }
+        a:hover{
+            border-bottom: 2px solid #5094f2;
+        }
+}
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .nav{
+        background-color: none;
+        display: none;
+        position: absolute;
+        top: 72px;
+        right: 0;
+        z-index: 1;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        display: block;
+        padding: 15px 0px 15px 0;
+        border-bottom: 1px solid #5094f2;
+        a{
+            width: 100%;
+            padding-bottom: 0;
+        }
+        a:hover{
+            border-bottom: none;
+            color: #5094f2;
+        }
+    }
+    .auth_buttons {
+        display: block;
+        background-color: #5094f2;
+        border: medium none;
+        font-size: 26px;
+        float: right;
+        width: 49px;
+        height: 33px;
+        border-radius: 2px;
+        outline: none;
+        position: relative;
+        top: 15px;
+        .fa{
+            color: #fff;
+        }
+    }
+}
