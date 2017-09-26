@@ -6,6 +6,9 @@
 .auth_buttons{
     display: none;
 }
+// .memu{
+//     display: block!important;
+// }
 .logo{
     img{
         max-width: 100%;
@@ -13,32 +16,41 @@
     }
 }
 .nav{
-    display: flex;
-    align-items: center;    
+    display: flex ;
+    align-items: center;
+        padding-top: 15px;    
 }
 .nav-item{
         padding-left: 30px;
+        list-style: none;
         a{
             font-size: 20px;
             color: #000;
             font-family: 'Conv_SegoeWP';
             padding-bottom: 12px;
+            text-decoration: none;
         }
         a:hover{
             border-bottom: 2px solid #5094f2;
         }
 }
 @media screen and (max-width: 768px) and (min-width: 100px){
-    .nav{
+    .menu{
         background-color: none;
         display: none;
         position: absolute;
-        top: 60px;
+        top: 76px;
         right: 0;
         z-index: 1;
         background: #fff;
         width: 100%;
         text-align: center;
+    }
+    .nav{
+        display: block;
+        margin: 0px;
+        padding: 0px;
+            padding-top: 0px;
     }
     .nav-item{
         display: block;
@@ -47,6 +59,7 @@
         a{
             width: 100%;
             padding-bottom: 0;
+            text-decoration: none;
         }
         a:hover{
             border-bottom: none;
@@ -68,5 +81,30 @@
         .fa{
             color: #fff;
         }
+    }
+    .hidden-md{
+        display: inline;
+    }
+}
+@media screen and (min-width: 769px){
+    .menu {
+        display: block !important;
+    }
+    .nav{
+        display: flex;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 100px){
+    .logo{
+        width: 120px;
+    }
+    .menu{
+        top: 54px;
+    }
+    .auth_buttons{
+        font-size: 23px;
+        width: 41px;
+        height: 29px;
+        top: 5px;
     }
 }
