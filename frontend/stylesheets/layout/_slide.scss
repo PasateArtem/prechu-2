@@ -1,4 +1,4 @@
-.pagination{
+.slider-nav{
 	.prev{
 		position: absolute;
 		left: 100px;
@@ -100,7 +100,7 @@
 	}
 }
 @media screen and (max-width: 1200px) and (min-width: 100px){
-	.pagination{
+	.slider-nav{
 	   .prev{
 		   left: 20px;
 	    }
@@ -110,7 +110,7 @@
     }
 }
 @media screen and (max-width: 768px) and (min-width: 100px){
-	.pagination{
+	.slider-nav{
 		display: none;
 	}
 	.grip-line{
